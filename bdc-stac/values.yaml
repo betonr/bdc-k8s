@@ -5,12 +5,13 @@
 replicaCount: 1
 
 image:
-  repository: betonoronha/homol
+  repository: registry.dpi.inpe.br/brazil-data-cube/bdc-stac
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "testes-0.1"
+  tag: "0.9"
 
-imagePullSecrets: []
+imagePullSecrets:
+  - name: dpi
 nameOverride: ""
 fullnameOverride: ""
 
