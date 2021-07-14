@@ -5,13 +5,13 @@
 replicaCount: 1
 
 image:
-  repository: betonoronha/homol
+  repository: registry.dpi.inpe.br/brazil-data-cube/test
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "testes-0.1"
+  tag: "0.1"
 
 imagePullSecrets:
-  - name: dockerhub
+  - name: dpi
 nameOverride: ""
 fullnameOverride: ""
 
